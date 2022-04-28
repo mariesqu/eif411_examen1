@@ -1,7 +1,7 @@
 package enums;
 
 public enum Hospital {
-	NICOYA("NICOYA"), MEXICO("Mexico");
+	NICOYA("NICOYA"), MEXICO("MEXICO");
 
 	private String nombre;
 

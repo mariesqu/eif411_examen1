@@ -19,16 +19,16 @@ public abstract class OrganizacionMundialSalud {
 
 	private void diagnosticar() {
 		for (Paciente paciente : listaPacientes) {
-			if (getNombreHospital().toString().toUpperCase().equals("HOSPITAL DE NICOYA")) {
-				listaPruebaCovid19.add(new PruebaRapida(paciente));
-			} else {
+			if (isGamHospital()) {
 				listaPruebaCovid19.add(new PruebaPcr(paciente));
+			} else {
+				listaPruebaCovid19.add(new PruebaRapida(paciente));
 			}
 		}
 	}
 
 	public final void imprimirReporte() {
-		System.out.println(getNombreHospital());
+		System.out.println(getNombreHospital().getNombre());
 		System.out.println("--------------------------");
 		for (PruebaCovid19 pruebas : listaPruebaCovid19) {
 			System.out

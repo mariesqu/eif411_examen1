@@ -2,9 +2,9 @@ package entities;
 
 import interfaces.PruebaCovid19;
 
-public final class PruebaPcr implements PruebaCovid19 {
+public final class PruebaPcr implements PruebaCovid19 { //inmutabilidad Herencia
 
-	private final Paciente paciente;
+	private final Paciente paciente; //inmutabilidad
 
 	PruebaPcr(Paciente paciente) {
 		this.paciente = paciente;

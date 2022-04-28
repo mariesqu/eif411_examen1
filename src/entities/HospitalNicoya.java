@@ -4,7 +4,7 @@ import java.util.List;
 
 import enums.Hospital;
 
-public class HospitalNicoya extends OrganizacionMundialSalud {
+public class HospitalNicoya extends OrganizacionMundialSalud { //Herencia
 	private Boolean isGamHospitalFlg = false;
 	private Hospital hospital = Hospital.NICOYA;
 
@@ -18,12 +18,12 @@ public class HospitalNicoya extends OrganizacionMundialSalud {
 		this.isGamHospitalFlg = isGamHospitalFlg;
 	}
 
-	@Override
+	@Override //sobreescritura
 	protected Boolean isGamHospital() {
 		return this.isGamHospitalFlg;
 	}
 
-	@Override
+	@Override //sobreescritura
 	protected Hospital getNombreHospital() {
 		return hospital;
 	}

@@ -1,10 +1,10 @@
 package entities;
 
 public final class Paciente {
-	private final String nombre;
-	private final Integer edad;
-	private final Integer temperatura;
-	private final Boolean vomito;
+	private final String nombre; //inmutabilidad
+	private final Integer edad; //inmutabilidad
+	private final Integer temperatura; //inmutabilidad
+	private final Boolean vomito; //inmutabilidad
 
 	public Paciente(String nombre, Integer edad, Integer temperatura, Boolean vomito) {
 		this.nombre = nombre;

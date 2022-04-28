@@ -6,7 +6,7 @@ public final class Paciente {
 	private final Integer temperatura;
 	private final Boolean vomito;
 
-	Paciente(String nombre, Integer edad, Integer temperatura, Boolean vomito) {
+	public Paciente(String nombre, Integer edad, Integer temperatura, Boolean vomito) {
 		this.nombre = nombre;
 		this.edad = edad;
 		this.temperatura = temperatura;

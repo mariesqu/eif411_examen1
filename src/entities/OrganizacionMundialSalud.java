@@ -1,5 +1,6 @@
 package entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import enums.Hospital;
@@ -15,9 +16,10 @@ public abstract class OrganizacionMundialSalud {
 
 	public OrganizacionMundialSalud(List<Paciente> listaPacientes) {
 		this.listaPacientes = listaPacientes;
+		listaPruebaCovid19 = new ArrayList<PruebaCovid19>();
 	}
 
-	private void diagnosticar() {
+	public void diagnosticar() {
 		for (Paciente paciente : listaPacientes) {
 			if (isGamHospital()) {
 				listaPruebaCovid19.add(new PruebaPcr(paciente));
